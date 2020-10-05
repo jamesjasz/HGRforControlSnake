@@ -1,5 +1,5 @@
 # HGRforControlSnake
-Hand Gesture Recognition for control Snake Game
+HAND GESTURE RECOGNITION USING CONVOLUTIONAL NEURAL NETWORK FOR CONTROLLING SNAKE
 
 OpenCV 4.2.0
 Tensorflow 1.15.0
