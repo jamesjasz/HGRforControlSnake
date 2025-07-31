@@ -1,113 +1,124 @@
-HGRforControlSnake
-Hand Gesture Recognition (HGR) using Convolutional Neural Networks to Control a Snake Game
+# Hand Gesture Recognition Snake Control 🐍✋
 
-📷 Project Screenshot
+![Project Demo](image.png)
 
-(Replace this path if the image file name differs.)
+A Python-based computer vision project that enables real-time control of a Snake game using hand gestures captured via webcam. This project combines classic gameplay with modern gesture recognition technology using Convolutional Neural Networks (CNN) for an engaging, hands-free gaming experience.
 
-Table of Contents
-Overview
+## 🚀 Features
 
-Features
+- **Real-time Gesture Control**: Control the Snake game using intuitive hand gestures
+- **CNN-Powered Recognition**: Advanced gesture detection using Convolutional Neural Networks
+- **Computer Vision Processing**: Utilizes OpenCV for robust video capture and image processing
+- **Automated Input**: PyAutoGUI integration for seamless keyboard simulation
+- **Plug-and-Play**: No additional hardware required - works with any standard webcam
+- **Customizable Settings**: Configurable game parameters and gesture sensitivity
 
-Tech Stack
+## 🛠️ Tech Stack
 
-Installation & Usage
+| Technology | Purpose |
+|------------|---------|
+| **Python** | Core application logic and project foundation |
+| **OpenCV** | Real-time video capture and computer vision processing |
+| **PyAutoGUI** | Keyboard automation for game control simulation |
+| **Pygame** | Snake game framework and graphics rendering |
+| **NumPy** | Numerical computations for image processing |
+| **TensorFlow/Keras** | CNN model implementation for gesture classification |
 
-Gesture Recognition Details
+## 📋 Prerequisites
 
-Project Structure
+- Python 3.7 or higher
+- Webcam (built-in or external)
+- Operating System: Windows, macOS, or Linux
 
-Contributing
+## ⚡ Installation & Setup
 
-License & Acknowledgements
-
-Overview
-HGRforControlSnake is a Python-based computer vision project that captures hand gestures via webcam and uses a CNN model to control a Snake game in real time. It merges classic gameplay with modern gesture-based input methods for an engaging, hands-free experience 
-This Dot Labs
-IJRASET
-+4
-SpringerLink
-+4
-SpringerLink
-+4
-.
-
-Features
-🎮 Real-time control of a Snake game using hand gestures
-
-Gesture detection powered by a CNN implemented with OpenCV
-
-Keyboard automation for game control enabled via gesture recognition
-
-Plug-and-play: webcam-based interaction without additional peripherals
-
-Tech Stack
-Python – Core application logic
-
-OpenCV – Video capture, gesture detection and processing
-
-PyAutoGUI – Automates keyboard input for gameplay
-
-Pygame – The Snake game framework
-
-Additional libraries defined in requirements.txt 
-SpringerLink
-+1
-SpringerLink
-+1
-
-Installation & Usage
-Clone the repository
-
-bash
-Copy
-Edit
+### 1. Clone the Repository
+```bash
 git clone https://github.com/jamesjasz/HGRforControlSnake.git
 cd HGRforControlSnake
-Install dependencies
+```
 
-bash
-Copy
-Edit
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
-Run gesture-recognition module
-Execute the script designed to detect gestures and map them to controls (e.g. coba10c.py).
+```
 
-Run the Snake game
-Launch the in-repo Snake game using:
+### 3. Verify Installation
+Ensure your webcam is connected and accessible by your system.
 
-bash
-Copy
-Edit
-python SnakeFun.py
-Make gestures in front of your webcam
-Detected gestures will simulate game key presses (up, down, left, right).
+## 🎮 Usage Instructions
 
-Gesture Recognition Details
-The system detects hand movements via webcam using HSV color-space filtering, then processes contours and directionality. A Convolutional Neural Network classifies gestures which PyAutoGUI translates into keystrokes to control the Snake game automatically 
-x.com
-+5
-IJRASET
-+5
-Medium
-+5
-This Dot Labs
-.
+### Running the Application
 
-Project Structure
-bash
-Copy
-Edit
-/HGRforControlSnake
-├── README.md
-├── requirements.txt
-├── image.png
-├── coba10c.py           # Main gesture recognition
-├── coba10c_page23.py    # Alternative or testing version
-├── SnakeFun.py          # Pygame-based snake game
-├── settingsSnakeFun.py  # Snake configuration parameters
-└── Artikel Ilmiah ...pdf# Project documentation
-Contributing
-Contributions are welcome! Open to improvements in gesture accuracy, new gesture mappings, or enhancements to the Snake game itself. Feel free to open a pull request.
+1. **Start Gesture Recognition Module**:
+   ```bash
+   python coba10c.py
+   ```
 
+2. **Launch Snake Game**:
+   ```bash
+   python SnakeFun.py
+   ```
+
+3. **Position Yourself**: 
+   - Sit approximately 2-3 feet from your webcam
+   - Ensure good lighting conditions
+   - Keep your hand clearly visible in the camera frame
+
+4. **Control Gestures**:
+   - **Up**: Raise your hand upward
+   - **Down**: Move your hand downward
+   - **Left**: Move your hand to the left
+   - **Right**: Move your hand to the right
+
+## 🧠 How It Works
+
+### Gesture Recognition Pipeline
+
+1. **Video Capture**: OpenCV captures real-time video frames from the webcam
+2. **Preprocessing**: Images are processed using HSV color-space filtering for hand detection
+3. **Contour Detection**: Advanced contour analysis identifies hand shapes and movements
+4. **CNN Classification**: Trained Convolutional Neural Network classifies detected gestures
+5. **Input Simulation**: PyAutoGUI translates recognized gestures into keyboard commands
+6. **Game Control**: Snake game responds to simulated keystrokes in real-time
+
+### Technical Implementation
+
+The system employs computer vision techniques including:
+- HSV color space conversion for robust hand detection
+- Morphological operations for noise reduction
+- Contour analysis for gesture boundary detection
+- Deep learning classification for accurate gesture recognition
+
+## 📁 Project Structure
+
+```
+HGRforControlSnake/
+├── README.md                    # Project documentation
+├── requirements.txt             # Python dependencies
+├── image.png                   # Project demonstration image
+├── coba10c.py                  # Main gesture recognition module
+├── coba10c_page23.py          # Alternative/testing version
+├── SnakeFun.py                # Pygame-based Snake game
+├── settingsSnakeFun.py        # Game configuration parameters
+└── Artikel Ilmiah...pdf       # Research documentation
+```
+
+## ⚙️ Configuration
+
+### Game Settings
+Modify `settingsSnakeFun.py` to customize:
+- Game speed and difficulty
+- Snake appearance and colors
+- Game board dimensions
+- Scoring system parameters
+
+### Gesture Sensitivity
+Adjust gesture recognition parameters in the main module:
+- Detection threshold values
+- Gesture recognition confidence levels
+- Camera calibration settings
+
+---
+
+⭐ **Star this repository if you found it helpful!** ⭐
