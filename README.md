@@ -55,17 +55,12 @@ Ensure your webcam is connected and accessible by your system.
    python coba10c.py
    ```
 
-2. **Launch Snake Game**:
-   ```bash
-   python SnakeFun.py
-   ```
-
-3. **Position Yourself**: 
+2. **Position Yourself**: 
    - Sit approximately 2-3 feet from your webcam
    - Ensure good lighting conditions
    - Keep your hand clearly visible in the camera frame
 
-4. **Control Gestures**:
+3. **Control Gestures**:
    - **Up**: Raise your hand upward
    - **Down**: Move your hand downward
    - **Left**: Move your hand to the left
